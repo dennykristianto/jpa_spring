@@ -8,14 +8,18 @@ public class Carrot {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @ManyToOne
-    private Basket basket;
+    @Column(name = "basket_id")
+    private int basketId;
 
-    public void setBasket(Basket basket) {
-        this.basket = basket;
+    public int getBasketId() {
+        return basketId;
     }
 
-    private boolean isFroozen;
+    public void setBasketId(int basketId) {
+        this.basketId = basketId;
+    }
+
+    private boolean isFrozen;
 
     public int getId() {
         return id;
@@ -26,11 +30,11 @@ public class Carrot {
     }
 
 
-    public boolean isFroozen() {
-        return isFroozen;
+    public boolean isFrozen() {
+        return isFrozen;
     }
 
-    public void setFroozen(boolean froozen) {
-        isFroozen = froozen;
+    public void setFrozen(boolean frozen) {
+        isFrozen = frozen;
     }
 }

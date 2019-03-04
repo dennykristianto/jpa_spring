@@ -11,7 +11,8 @@ public class Basket {
     private int id;
     private String name;
 
-    @OneToMany(mappedBy = "basket")
+    @OneToMany
+    @JoinColumn(name="basket_id")
     private List<Carrot> carrot;
 
     public List<Carrot> getCarrot() {
