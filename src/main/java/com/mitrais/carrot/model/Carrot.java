@@ -11,6 +11,17 @@ public class Carrot {
     @Column(name = "basket_id")
     private int basketId;
 
+    @Column(name = "freezer_id")
+    private int freezerId;
+
+    public int getFreezerId() {
+        return freezerId;
+    }
+
+    public void setFreezerId(int freezerId) {
+        this.freezerId = freezerId;
+    }
+
     public int getBasketId() {
         return basketId;
     }

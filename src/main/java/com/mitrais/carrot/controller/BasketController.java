@@ -1,8 +1,6 @@
 package com.mitrais.carrot.controller;
 
 
-import com.mitrais.carrot.interfaces.BasketRepository;
-import com.mitrais.carrot.interfaces.CarrotRepository;
 import com.mitrais.carrot.model.Basket;
 import com.mitrais.carrot.model.Carrot;
 import com.mitrais.carrot.services.BasketServices;

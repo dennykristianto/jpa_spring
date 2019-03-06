@@ -1,18 +1,16 @@
 package com.mitrais.carrot.controller;
 
 import com.mitrais.carrot.model.Book;
-import com.mitrais.carrot.model.Staff;
 import com.mitrais.carrot.services.BookServices;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/books")
 public class BookController {
-    BookServices bookServices;
+    private BookServices bookServices;
 
     public BookController(BookServices bookServices) {
         this.bookServices = bookServices;
